@@ -4,26 +4,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import com.OrangeHRM.BaseClass;
+
 public class PIM_Configuration extends BaseClass
 {
-	public static void main(String[] args) 
-	{
-		//launch Browser 
-		launchBrowser("Chrome");
-		
-		// driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive.com/");
-		
-		//Valid username valid password 
-		LoginTC.Login("Admin","admin123");
-	
-//		Add_Custom_Fields("FieldName");//Done
-		
-//		Add_Reporting_Method("INdirectly");//Done
-		
-//		Add_TerminationReasons("Add_TerminationReasons");//Done
-	}
-	public static void Add_TerminationReasons(String Name)
+	/*
+	 * public static void main(String[] args) { //launch Browser
+	 * launchBrowser("Chrome");
+	 * 
+	 * // driver.manage().window().maximize();
+	 * driver.get("https://opensource-demo.orangehrmlive.com/");
+	 * 
+	 * //Valid username valid password LoginPage.Login_Method("Admin","admin123");
+	 * 
+	 * // Add_Custom_Fields("FieldName");//Done
+	 * 
+	 * // Add_Reporting_Method("INdirectly");//Done
+	 * 
+	 * // Add_TerminationReasons("Add_TerminationReasons");//Done }
+	 */
+	public static void PIM_Configuration_Add_TerminationReasons(String Name)
 	{
 		//click PIM menu
 		driver.findElement(By.id("menu_pim_viewPimModule")).click();
@@ -43,7 +43,7 @@ public class PIM_Configuration extends BaseClass
 		//click to Save button
 		driver.findElement(By.id("btnSave")).click();
 	}
-	public static void Add_Reporting_Method(String Name)
+	public static void PIM_Configuration_Add_Reporting_Method(String Name)
 	{
 		//click PIM menu
 		driver.findElement(By.id("menu_pim_viewPimModule")).click();
@@ -63,7 +63,7 @@ public class PIM_Configuration extends BaseClass
 		//click to Save button
 		driver.findElement(By.id("btnSave")).click();
 	}
-	public static void Add_Custom_Fields(String FieldName)
+	public static void PIM_Configuration_Add_Custom_Fields(String FieldName)
 	{
 		//click PIM menu
 		driver.findElement(By.id("menu_pim_viewPimModule")).click();

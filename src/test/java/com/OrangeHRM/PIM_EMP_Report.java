@@ -2,6 +2,9 @@ package com.OrangeHRM;
 
 import org.openqa.selenium.By;
 
+import com.OrangeHRM.BaseClass;
+import com.OrangeHRM.LoginPage;
+
 public class PIM_EMP_Report extends BaseClass
 {
 	public static void main(String[] args) 
@@ -13,7 +16,7 @@ public class PIM_EMP_Report extends BaseClass
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 		//Valid username valid password 
-		LoginTC.Login("Admin","admin123");
+		LoginPage.Login_Method("Admin","admin123");
 	
 //		Add_Employee_Reports("ReportsName");//Done
 		

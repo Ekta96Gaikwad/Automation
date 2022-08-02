@@ -6,6 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import com.OrangeHRM.BaseClass;
+import com.OrangeHRM.LoginPage;
+
 public class PIM_EMP_List extends BaseClass
 {
 	public static void main(String[] args) throws Exception 
@@ -17,7 +20,7 @@ public class PIM_EMP_List extends BaseClass
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 		//Valid username valid password 
-		LoginTC.Login("Admin","admin123");
+		LoginPage.Login_Method("Admin","admin123");
 	
 		Add_Emp("Admin","ADMIN","ADMIN!");
 	}
